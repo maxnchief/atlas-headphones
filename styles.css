@@ -1,0 +1,41 @@
+/* Center content and set max width */
+.container, .content, main {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Links hover/active color */
+a:hover,
+a:active {
+  color: #FF6565;
+}
+
+/* Button hover/active opacity */
+button:hover,
+button:active,
+input[type="button"]:hover,
+input[type="button"]:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
+  opacity: 0.9;
+}
+
+/* Responsive: Mobile version at 480px or less */
+@media (max-width: 480px) {
+  .container, .content, main {
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+  /* Add additional mobile styles as needed */
+  body {
+    font-size: 16px;
+  }
+
+  header nav {
+    display:flex;
+    justify-content: flex-end;
+    gap: 20px;
+  }
