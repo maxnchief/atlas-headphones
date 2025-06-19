@@ -57,10 +57,37 @@ input[type="submit"]:active {
   }
 }
 
+/* Desktop: align logo and nav horizontally */
+@media screen and (min-width: 481px) {
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/* Mobile: stack logo and nav (if needed) */
+@media (max-width: 480px) {
+  header .container {
+    display: block;
+  }
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+}
+
+
+
 /* Header styles */
 header a {
     color: white;
     text-decoration: none;
+    font-family: var(--font-family-body);
+    text-transform: lowercase;
+    font-size: var(--font-size-medium);
 }
 
 header {
