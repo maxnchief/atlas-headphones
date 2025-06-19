@@ -103,3 +103,50 @@ header {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.Header-content {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+gap: 20px;
+color: white;
+}
+
+@media (max-width: 480px) {
+    .Header-content {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 481px) {
+    .Header-content {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: var(--font-size-xl);
+    }
+}
+
+/* Button styles */
+button,
+input[type="button"],
+input[type="submit"] {
+    background-color: var(--color-primary);
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    padding: 10px 32px;
+    font-size: var(--font-size-btn);
+    font-family: var(--font-family-body);
+    cursor: pointer;
+    transition: opacity 0.2s;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Add drop shadow to all text and headers */
+body, h1, h2, h3, h4, h5, h6, p, a, span, label {
+    text-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
