@@ -1,3 +1,14 @@
+:root {
+  --font-size-small: 12px;
+  --font-size-btn: 14px;
+  --font-size-medium: 16px;
+  --font-size-large: 18px;
+  --font-size-xl: 32px;
+  --font-size-xxl: 46px;
+  --color-primary: #FF6565;
+  --font-family-body: 'Source Sans Pro', 'Lato', sans-serif;
+}
+
 /* Center content and set max width */
 .container, .content, main {
   max-width: 1000px;
@@ -31,11 +42,37 @@ input[type="submit"]:active {
 }
   /* Add additional mobile styles as needed */
   body {
-    font-size: 16px;
-  }
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Responsive: Desktop navbar at 481px or more */
+@media screen and (min-width: 481px) {
+    
 
   header nav {
     display:flex;
     justify-content: flex-end;
     gap: 20px;
   }
+}
+
+/* Header styles */
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    width: 100vw; /* Ensure header is full viewport width */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    height: 600px;
+    background-image: url(images/headphones_hero_1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
