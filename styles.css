@@ -39,6 +39,11 @@ input[type="submit"]:active {
     padding-left: 10px;
     padding-right: 10px;
   }
+
+  .grid {
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+  }
 }
   /* Add additional mobile styles as needed */
   body {
@@ -64,6 +69,15 @@ input[type="submit"]:active {
     align-items: center;
     justify-content: space-between;
   }
+
+}
+
+@media (max-width: 768px) {
+    .grid {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+  }
+    
 }
 
 /* Mobile: specific responsive adjustments */
@@ -149,4 +163,18 @@ input[type="submit"] {
 /* Add drop shadow to all text and headers */
 body, h1, h2, h3, h4, h5, h6, p, a, span, label {
     text-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+/* main grid styles */
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 100%;
+  text-align: center;
+  font-family: var(--font-family-body);
+  margin: 2rem 0;
+}
+.what-we-do {
+  text-align: center;
 }
