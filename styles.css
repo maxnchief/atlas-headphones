@@ -175,6 +175,35 @@ body, h1, h2, h3, h4, h5, h6, p, a, span, label {
   font-family: var(--font-family-body);
   margin: 2rem 0;
 }
-.what-we-do {
-  text-align: center;
+#what-we-do {
+    text-align: center;
+}
+
+#results{
+    background-image: url(images/headphones_hero_2.jpg);
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+/* Pentagon background behind each h2 */
+#results h2 {
+    position: relative;
+    z-index: 1;
+}
+
+#results h2::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background: url(images/pentagone.png) no-repeat center/contain;
+    z-index: -1;
+    pointer-events: none;
 }
