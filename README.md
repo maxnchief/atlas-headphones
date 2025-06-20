@@ -2,6 +2,8 @@ this is a recreation of the atlas headphones website from [this figma page](http
 
 It uses a combination of HTML structure with CSS styling, and it is hosted on [github pages here](https://maxnchief.github.io/atlas-headphones/) 
 
+The website is responsive to mobile but has issues in tablet mode
+
 The site is broken into 4 main segments:
 
 The Header-
