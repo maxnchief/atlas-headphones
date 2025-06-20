@@ -10,7 +10,7 @@ The Header-
 
 What we do-
 
-![Atlas Headphones Screenshot](images/screenshots/what%20we%20do.png.)
+![Atlas Headphones Screenshot](images/screenshots/what%20we%20do.png)
 
 Our results speak for themselves-
 
